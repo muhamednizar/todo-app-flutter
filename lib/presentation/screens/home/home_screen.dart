@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/presentation/screens/taps/settings_tab/settings_tab.dart';
-import 'package:todo_app/presentation/screens/taps/tasks_tab/tasks_tab.dart';
+import 'package:todo_app/presentation/screens/home/taps/settings_tab/settings_tab.dart';
+import 'package:todo_app/presentation/screens/home/taps/tasks_tab/tasks_tab.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -21,7 +21,10 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('ToDoList'),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(context: context, builder: (context) =>
+              addTaskBottomSheet(),)
+        },
         child: const Icon(Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

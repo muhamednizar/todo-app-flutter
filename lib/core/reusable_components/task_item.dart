@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:todo_app/config/theme/text_styles.dart';
 import 'package:todo_app/core/colors_manager.dart';
 
 class TaskItem extends StatelessWidget {
@@ -9,7 +10,8 @@ class TaskItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: Colors.white, borderRadius: BorderRadius.circular(20)),
+          color: Theme.of(context).indicatorColor,
+          borderRadius: BorderRadius.circular(20)),
       margin: EdgeInsets.all(10),
       child: Slidable(
         startActionPane:
@@ -55,8 +57,7 @@ class TaskItem extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    Text('Task Title',
-                        style: Theme.of(context).textTheme.titleMedium),
+                    Text('Task Title', style: TextStyles.cardTitleTextStyle),
                     SizedBox(
                       height: 5,
                     ),
@@ -68,12 +69,7 @@ class TaskItem extends StatelessWidget {
                           width: 7,
                         ),
                         Text('10:30',
-                            style: Theme.of(context)
-                                .textTheme
-                                .titleMedium!
-                                .copyWith(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.w400))
+                            style: Theme.of(context).textTheme.bodySmall)
                       ],
                     )
                   ],

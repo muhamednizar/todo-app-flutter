@@ -15,7 +15,6 @@ class MyApp extends StatelessWidget {
       create: (_) => SettingsProvider(),
       child: Consumer<SettingsProvider>(
         builder: (context, myProvider, _) {
-          // استدعاء الدالة loadSettings لتحديث الإعدادات عند بداية التطبيق
           myProvider.loadSettings();
 
           return ScreenUtilInit(
@@ -27,8 +26,8 @@ class MyApp extends StatelessWidget {
                 locale: myProvider.currentLocale,
                 localizationsDelegates: AppLocalizations.localizationsDelegates,
                 supportedLocales: [
-                  Locale('en'), // الإنجليزية
-                  Locale('ar'), // العربية
+                  Locale('en'),
+                  Locale('ar'),
                 ],
                 debugShowCheckedModeBanner: false,
                 onGenerateRoute: RoutesManager.router,

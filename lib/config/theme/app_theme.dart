@@ -10,7 +10,7 @@ class AppTheme {
       dividerColor: ColorsManager.blueColor,
       appBarTheme: AppBarTheme(
         backgroundColor: ColorsManager.blueColor,
-        elevation: 4,
+        elevation: 0,
         centerTitle: true,
         titleTextStyle: TextStyles.appBarTextStyle,
       ),

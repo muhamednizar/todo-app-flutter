@@ -7,4 +7,5 @@ class ColorsManager {
   static const Color lightscaffoldBgColor = Color(0xFFDFECDB);
   static const Color black = Color(0xFF060E1E);
   static const Color blackAccent = Color(0xFF141922);
+  static const Color successColor = Color(0xFF61E757);
 }

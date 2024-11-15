@@ -1,0 +1,21 @@
+{
+  "titleApp": "To Do App",
+  "tasksTab": "Tasks",
+  "settingsTab": "Settings",
+  "bottomSheetTitle": "Add new Task",
+  "bottomSheetTitleHint": "enter your task title",
+  "bottomSheetDescriptionHint": "enter your task description",
+  "bottomSheetDateSelect": "Select Date",
+  "bottomSheetAddTaskBtn": "Add Task",
+  "editTask": "Edit Task",
+  "editTitleHint": "edit your title",
+  "editDescriptionHint": "edit your description",
+  "editBtn": "Save Changes",
+  "settingsTheme": "Theme : ",
+  "light": "Light",
+  "dark": "Dark",
+  "settingsLang": "Language",
+  "english": "english",
+  "arabic": "العربيه",
+  "logOut": "Log out"
+}

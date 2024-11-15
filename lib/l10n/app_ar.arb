@@ -1,0 +1,21 @@
+{
+  "titleApp": "تطبيق المهام",
+  "tasksTab": "المهام",
+  "settingsTab": "الاعدادات",
+  "bottomSheetTitle": "اضف مهمه جديده",
+  "bottomSheetTitleHint": "ضغ عنوان المهمه",
+  "bottomSheetDescriptionHint": "وصف المهمه",
+  "bottomSheetDateSelect": "اختر التاريخ",
+  "bottomSheetAddTaskBtn": "اضف المهمه",
+  "editTask": "تعديل المهمه",
+  "editTitleHint": "تعديل العنوان",
+  "editDescriptionHint": "تعديل الوصف",
+  "editBtn": "حفظ التغييرات",
+  "settingsTheme": "السمة",
+  "settingsLang": "اللغة",
+  "light": "فاتح",
+  "dark": "داكن",
+  "english": "english",
+  "arabic": "العربيه",
+  "logOut": "تسجيل الخروج"
+}

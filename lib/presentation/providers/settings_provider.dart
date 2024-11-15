@@ -6,15 +6,14 @@ class SettingsProvider extends ChangeNotifier {
   String selectedTheme = 'Light';
 
   String selectedLang = 'English';
-  Locale currentLocale = const Locale('en'); // اللغة الافتراضية هي الإنجليزية
+  Locale currentLocale = const Locale('en');
 
   Future<void> _loadSettings() async {
     final prefs = await SharedPreferences.getInstance();
 
-    selectedTheme = prefs.getString('theme') ?? 'Light'; // الافتراضي هو "Light"
+    selectedTheme = prefs.getString('theme') ?? 'Light';
     currentTheme = selectedTheme == 'Light' ? ThemeMode.light : ThemeMode.dark;
-    selectedLang =
-        prefs.getString('language') ?? 'English'; // الافتراضي هو "English"
+    selectedLang = prefs.getString('language') ?? 'English';
     currentLocale =
         selectedLang == 'English' ? const Locale('en') : const Locale('ar');
 
